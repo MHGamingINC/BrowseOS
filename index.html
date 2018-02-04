@@ -19,8 +19,18 @@
     }
   </style>
 <body>
+  <script>
+  function start() {
+  document.getElementById("desktop").style.display = "block";
+    document.getElementById("taskbar").style.display = "block";
+    document.getElementById("startup").style.display = "none";
+  }
+  </script>
   <div id="desktop"></div>
   <div id="taskbar"></div>
-  <div id="startup"></div>
+  <div id="startup">
+    <h1>Welcome to BrowseOS! </h1>
+    <button onclick="start();">Start BrowseOS</button>
+  </div>
   </body>
 </html>
