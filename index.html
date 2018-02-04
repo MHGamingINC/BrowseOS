@@ -33,6 +33,14 @@
   </style>
 <body>
   <script>
+  var udata = prompt("Please input your userdata.");
+  if (udata === "guest") {
+  var hi = {password: "", apps: "", browsingHistory: ""};
+    hi.password = prompt("password");
+    udata = hi;
+  }
+  </script>
+  <script>
   function start() {
   document.getElementById("desktop").style.display = "block";
     document.getElementById("taskbar").style.display = "block";
@@ -43,7 +51,8 @@
   <div id="taskbar"></div>
   <div id="startup">
     <h1>Welcome to BrowseOS! </h1>
-    <button onclick="start();">Start BrowseOS</button>
+    <p id="pswdget" contenteditable="true">Enter your password here.</p>
+    <button onclick="if(document.getElementById("pswdget")===udata.password){start();}">Start BrowseOS</button>
   </div>
   </body>
 </html>
