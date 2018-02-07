@@ -1,1 +1,9 @@
-
+.txt {
+background-color: #d9d9d9;
+  color: black;
+}
+button {
+border-color: #d9d9d9;
+  background-color: #d9d9d9;
+  border-radius: 8px;
+}
